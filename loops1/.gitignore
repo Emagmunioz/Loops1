@@ -2,11 +2,11 @@
 target/
 
 # Ignorar archivos de configuración de IDE
+.vscode/
 .idea/
 *.iml
 *.ipr
 *.iws
-.vscode/
 .classpath
 .project
 .settings/
