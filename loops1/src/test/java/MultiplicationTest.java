@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Test;
+import e.g.dev.Multiplication;
 import java.util.Arrays;
 import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -6,7 +7,7 @@ import static org.hamcrest.Matchers.*;
 public class MultiplicationTest {
     @Test
     public void testGenerarTablaMultiplicar() {
-        int n = 5;
+        int n = 6;
         List<String> expectedResult = Arrays.asList(
             "6 x 1 = 6",
             "6 x 2 = 12",
@@ -20,7 +21,7 @@ public class MultiplicationTest {
             "6 x 10 = 60"
         );
 
-        List<String> resultadoActual = TablaMultiplicar.generarTablaMultiplicar(n);
+        List<String> resultadoActual = Multiplication.generarTablaMultiplicar(n);
 
         assertThat(resultadoActual, is(notNullValue()));
         assertThat(resultadoActual, hasSize(10));      
